@@ -54,7 +54,7 @@ def Accuracy(testSet,predictions):
     print('Accuracy: ')
     print(correct/float(len(testSet))*100)
     
-def main1():
+def main():
     trainingSet=[]
     testSet=[]
     split=.67
@@ -69,5 +69,5 @@ def main1():
         predictions.append(result)
         print('Predicted = '+repr(result)+' Actual = '+repr(testSet[x][-1]))
     Accuracy(testSet,predictions)
-main1()
+main()
         
